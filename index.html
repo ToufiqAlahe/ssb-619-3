@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ssb619-3</title>
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3schools31.css">
+<style>
+	h1{color:green}
+ table, th, td {
+  border: 1px solid yellow;
+}
+</style>
+</head>
+ <body>
+ <h1> Hello World</h1>
+<h2> thank you</h2>
+<h1>The main element</h1>
+<main>
+	<h1>Most Popular Browsers</h1>
+  <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+
+  <article>
+    <h2>Google Chrome</h2>
+    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+  </article>
+
+  <article>
+    <h2>Mozilla Firefox</h2>
+    <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+  </article>
+
+  <article>
+    <h2>Microsoft Edge</h2>
+    <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+   </article>
+</main>
+
+<h1>The map and area elements</h1>
+
+<p>Click on the sun or on one of the planets to watch it closer:</p>
+<img src="images/planets.jpg" width="250" height="150" alt="planet" usemap="#planetmap">
+<map name="planetmap">
+ <area shape="rect" coords="0,0,82,126" alt="Venus" href="Venus.htm">
+<area shape="circle" coords="90,58,3" alt="Mercury" href="mercury.htm">
+<area shape="circle" coords="124,58,8" alt="Venus" href="Venus.htm">
+</map>
+<h1> The mark element </h1>
+<p> Do not forget to drink the<mark> milk</mark>.</p>
+
+<h1> The menu element</h1>
+<menu>
+	<li>coffee</li>
+	<li>milk</li>
+	<li>tea</li>
+</menu>
+
+<h1>The meter element</h1>
+
+<p>The meter element is used to display a gauge:</p>
+<label for ="disk_c">Disk usage C:</label>
+<meter id="disk_c" value="2" min="0" max="10">2 out 10</meter><br>
+<label for="disk_d">Disk usage D:</label>
+<meter id="disk_d"value="0.6">60%</meter>
+
+<h1>The nav element</h1>
+
+<p>The nav element defines a set of navigation links:</p>
+<nav>
+	<a href="/html/"> HTML</a>
+	<a href="/CSS/"> CSS</a>
+	<a href="/JS/"> Javascript</a>
+	<a href="/python/"> Python</a>
+</nav>
+
+<h1>The noscript element</h1>
+
+<p>A browser with JavaScript disabled will show the text inside the noscript element ("Hello World!" will not be displayed).</p>
+<script>
+	document.write("hello world")
+</script>
+<noscript>Sorry, your browser does not support javascript!</noscript><br>
+<object data="images/movie.mp4" width="400" height="300"></object>
+<h1> The ol element</h1>
+<ol>
+	<li>Tea</li>
+	<li> coffee</li>
+	<li>water </li>
+</ol>
+<ol type="a">
+	<li>Tea</li>
+	<li> Coffee</li>
+	<li> Water</li>
+</ol>
+<h1>The optgroup element</h1>
+
+<p>The optgroup tag is used to group related options in a drop-down list:</p>
+<form action="/action_page.php">
+	<label for="cars"> Choose a car</label>
+	<select name="cars" id="cars">
+	   <optgroup label="Swedish Cars">
+		<option value="Volvo"> Volvo</option>
+		<option value="saab"> Saab</option>
+	   </optgroup>
+     <optgroup label="German cars">
+     	<option value="mercedes">Mercedes</option>
+     	<option value="audi">Audi</option>
+     </optgroup>
+    </select><br><br>
+<input type="submit" value="submit">
+</form><br>
+<form action="/action_page.php">
+	<label for="browser">Choose your browser from the list:</label>
+	<input list="browsers" id="browser" name="browser">
+	 <datalist id="browsers">
+	 	<option value="Edge">
+	 		<option value="Firefox">
+	 			<option value="Chrome">
+	 </datalist>
+</form>
+
+<h1>The output element</h1>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+<input type="number" id="a" value="50">
++<input type="range" id="b" value="20">
+=<output name="x" for="a b"></output>
+</form>
+
+<h1>The p element</h1>
+
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+
+<h1>The param element</h1>
+<object data="images/horse.wav">
+ <param name="Autoplay" value="true">
+</object>
+
+<h1>The picture element</h1>
+
+<p>Resize the browser window to load different images.</p>
+<picture>
+	<source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+		<sourxe="(min-width:465px)" srcset="img_white_flower.jpg">
+			<img src="images/img_pink_flowers.jpg" alt="flowers" style="width:auto">
+</picture>
+<h1>The pre element</h1>
+<pre>
+	Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line           breaks
+</pre>
+
+<h1>The progress element</h1>
+<label for="file"> Downloading progress</label>
+<progress id="file" value="35" max="100">
+</progress>
+<h1>The q element</h1>
+
+<p>WWF's goal is to:
+	<q>Build a future where people live in harmony with nature.</q>
+We hope they succeed.</p>
+<h1>The rp element</h1>
+<ruby>
+	漢<rp>
+		(</rp><rt>ㄏㄢˋ</rt><rp>)
+		</rp>
+</ruby>
+
+<h1> the s element</h1>
+<p><s>Only 50 tickets left</s><br> All sold out</p>
+
+<h1>The samp element</h1>
+
+<p>Message from my computer:</p>
+
+<p><samp>File not found.<br>Press F1 to continue</samp></p>
+
+<h1>The script element</h1>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script> 
+<h1>The search Element</h1>
+<search>
+	<form>
+	<input name="fserch" id="fsearch" placeholder="w3schools">
+	</form>
+</search>
+<h1>The section element</h1>
+<section>
+	 <h2>WWF History</h2>
+  <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+
+<section>
+	<h2>WWF's Symbol</h2>
+  <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+</section>
+<form action="action_page.php">
+<label for="cars">Choose a car:</label>
+<select name="cars" id="cars">
+<option > volvo</option>
+<option> audi</option>
+<option>saab</option>
+<option>opel</option>
+</select><br><br>
+<input type="submit" value="submit">
+</form>
+<h1>The small element</h1>
+
+<p>This is some normal text.</p>
+<p> <small> This is some normal text</small></p>
+<h1>The source element</h1>
+
+<p>Click on the play button to play a sound:</p>
+<audio controls>
+	<source src="horse.ogg" type="audio/ogg">
+		<source src="horse.wav" type="audio/wav">
+</audio>
+
+<h1>The span element</h1>
+<p> My mother has <span style="color:black;font-weight:bold">black</span> eyes and my father has <span style="color:brown;font-weight:bold">brown</span> eyes.
+
+<h1>The strong element</h1>
+
+<p>This text is normal.</p>
+
+<p><strong> This is normal.</strong></p>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+<p>The water molecule formula is H<sub>2</sub>O.</p>
+
+<h1>The summary element</h1>
+<details>
+	<summary>Epcot Center</summary>
+ <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</details>
+<h1>The sub and sup elements</h1>
+<p> the math of 2<sup>4</sup> is= 16</p> 
+
+<h1>The svg element</h1>
+<svg width="100" height="100">
+	<circle cx="50" cy="50" r="40" stroke="red" stroke-width="4" fill="brown"/> 
+</svg>
+
+<h1>The table element</h1>
+
+<table>
+	<tr>
+		<th> Month</th>
+		<th> Savings</th>
+	</tr>
+	<tr>
+		<td>january</td>
+		<td>$120</td>
+	</tr>
+	<tr>
+		<td>february</td>
+		<td>$59</td>
+	</tr>
+</table>
+<h1> the thead,tbody,tfoot element</h1>
+<table>
+	<thead>
+		<tr>
+			<th>Month</th>
+			<th>salary</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>March</td>
+			<td>$200</td>
+		</tr>
+		<tr>
+			<td>April</td>
+			<td>$300</td>
+		</tr>
+	</tbody>
+	 <tfoot>
+	 	<tr>
+	 		<td>Sum</td>
+	 		<td>$500</td>
+	 	</tr>
+	 </tfoot>
+</table>
+
+<h1>The template Element</h1>
+
+<p>Click the button below to display the hidden content from the template element.</p>
+
+<button onclick="showContent()">Show hidden content</button>
+
+<template>
+  <h2>Flower</h2>
+  <img src="images/img_white_flower.jpg" width="214" height="204">
+</template>
+
+<script>
+function showContent() {
+  let temp = document.getElementsByTagName("template")[0];
+  let clon = temp.content.cloneNode(true);
+  document.body.appendChild(clon);
+}
+</script>
+
+<h1>The textarea element</h1>
+<form action="/action_page.php">
+ <p><label for="w3review">Review of W3schools:</label> </p>
+ <textarea id="w3review" name="w3review" rows="4" cols="50"> At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea><br>
+ <input type="submit" value="submit">
+</form>
+
+<h1>The time element</h1>
+<p>Open from <time>10:00</time> to <time> 12:00</time> every weekday</p>
+<p> I have a date on <time datime="2009-02-14">Valentines day</time>. </p>
+
+<h1> The u element</h1>
+<p> this is some <u>mispeled</u> text.</p>
+
+<h1> The ul element</h1>
+<ul>
+	<li>coffee</li>
+	<li> Water</li>
+	<li> Tea</li>
+</ul>
+
+<h1> The var element</h1>
+<p> the area of a triangle is: 1/2 *<var>b</var>*<var>h </var>, where <var>b</var> is the base and <var> h </var> is the straight height.</p>
+
+<video width="320" height="240" controls>
+	<source src="forrest_gump.mp4" type="video/mp4">
+	<source src="forest_gump.ogg" type="video/ogg">
+	<track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+	<track src="fgsubtitles_no.vtt" kind="subtitles" srclang="en" label="Norwegian">
+</video>	
+
+
+<h1>The wbr element</h1>
+
+<p>Try to shrink the browser window, to view how the very long word in 
+the paragraph below will break:</p>
+
+<p>This is a veryveryveryveryveryveryveryvery<wbr>veryveryveryveryveryveryveryveryveryvery<wbr>hhhdhhrdfbdfbduhjvdbuhbduhjbdhubudsbujhdsbuvhshjv<wbr>nbyhugytgytvytvyuhvbujbujhbu</p>
+	
+	<a href="index.html">Home</a>
+	<a href="form_619.html">Form_619_page</a>
+</body>
+</html>
